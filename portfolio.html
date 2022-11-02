@@ -16,7 +16,6 @@
   <body>
     
     <header class="page-header">
-      <!-- name -->
       <div class="header-container container">
       <nav class="nav-list">
         <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
@@ -29,12 +28,26 @@
       </nav>
       <!-- contacts -->
       <ul class="list  contacts">
+        </li>
+        <div class="contact-list">
         <li class="contact-item">
-          <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+          <a href="mailto:info@devstudio.com" class="contact-link email">
+            <svg class="email-icon" 
+            width="16px"
+            height="12px" >
+              <use href="./image/icons.svg#email"></use>
+            </svg>
+            info@devstudio.com</a>
         </li>
         <li class="contact-item">
-          <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
-        </li>
+          <a href="tel:+380961111111" class="contact-link tel">
+            <svg class="tel-icon" 
+            width="10px";
+            height="16px">
+              <use href="./image/icons.svg#tel"></use>
+            </svg>
+            +38 096 111 11 11</a>
+          </div>
       </ul>
       </div>
     </header>
@@ -149,8 +162,9 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-      <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
-      <address>
+        <div>
+        <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
+        <address>
         <ul class="list address-list">
           <li class="address-item">
             <a href="https://goo.gl/maps/YveR7ZB156aqMEmg6"
@@ -164,7 +178,45 @@
             <a href="mailto:info@devstudio.com" class="contacts-footer">info@devstudio.com</a>
           </li>
         </ul>
-      </address>
+        </address>
+        </div>
+        <div>
+        <b class="call">приєднуйтесь</b>
+        <ul class="list social-list footer-social">
+          <li class="social-item footer-social-item">
+            <a href="https://www.instagram.com/"
+            target="_blank" rel="noreferrer noopener nofollow">
+            <svg class="social-icon footer-social-icon" width="20px" height="20px">
+              <use href="./image/icons.svg#instagram"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="social-item footer-social-item">
+            <a href="https://twitter.com/"
+            target="_blank" rel="noreferrer noopener nofollow">
+            <svg class="social-icon footer-social-icon" width="20px" height="20px">
+              <use href="./image/icons.svg#twitter"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="social-item footer-social-item">
+            <a href="https://www.facebook.com/"
+            target="_blank" rel="noreferrer noopener nofollow">
+            <svg class="social-icon footer-social-icon" width="20px" height="20px">
+              <use href="./image/icons.svg#facebook"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="social-item footer-social-item">
+            <a href="https://www.linkedin.com/"
+            target="_blank" rel="noreferrer noopener nofollow">
+            <svg class="social-icon footer-social-icon" width="20px" height="20px">
+              <use href="./image/icons.svg#linkedin"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+        </div>
       </div>
     </footer>
   </body>
