@@ -117,7 +117,6 @@ img {
 /* contacts */
 .contacts{
   margin-left: auto;
-  margin-right: auto;
   display: flex;
  }
 
@@ -126,12 +125,7 @@ img {
   line-height: 1.15;
   letter-spacing: 0.02em;
   }
-  
-  .contact-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    
 .contact-link {
   display: flex;
   align-items: center;
@@ -169,8 +163,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(../image/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img.jpg);
   background-color: #C4C4C4; 
   background-size: cover;
   height: 600px;
@@ -282,7 +275,8 @@ img {
 
 /* activity */
 
-.activity {padding-top: var(--primary-pt);}
+.activity {padding-top: var(--primary-pt);
+ padding-bottom: var(--primary-pt);}
 
 .section-title {
   text-align: center;
@@ -313,8 +307,8 @@ img {
 .teem .profession {
   font-size: 16px;
   line-height: 1.19;
-  padding-top: 10px;
-  padding-bottom: 16px;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
   .teem-list {
@@ -338,7 +332,7 @@ img {
   gap: 0 10px;
   }
 
-.social-item {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,14 +340,13 @@ img {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
-  color: var(--primary-text-color);
   }
 
   .social-icon {
-    fill: var(--primary-text-color);;
+    fill: #AFB1B8;
   }
-  .social-item:hover,
-  .social-item:focus {
+  .social-link:hover,
+  .social-link:focus {
     background-color: var(--accent-color)
   }
   .social-item:hover .social-icon,
@@ -369,6 +362,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.clients .section-title {
+  padding-bottom: 50px;
+}
+
 .client-list {
   display: flex;
   flex-wrap: wrap;
@@ -376,11 +374,10 @@ img {
   gap:0 30px;
   }
 
-  .client-item {
+  .client-link {
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,10 +386,10 @@ img {
   .client-icon {
       fill: #AFB1B8;
     }
-  .client-item:hover {
+  .client-link:hover {
       border: 1px solid var(--accent-color);
     }
-  .client-item:hover .client-icon {
+  .client-link:hover .client-icon {
   fill: var(--accent-color);
 }
 
@@ -465,9 +462,9 @@ img {
     margin-top: 20px;
   }
 
-  .footer-social-item {
+  .footer-social-link {
     background-color: rgba(255, 255, 255, 0.1);
-  }
+    }
 
   .footer-social-icon {
     fill:var(--white-text-color) ;
